@@ -1,0 +1,304 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+   background: white;
+}
+
+#header{
+    text-align: center;
+}
+
+.text{
+    margin: 0px;
+}
+
+.counter{
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+}
+
+.wrapper input{
+   background-color: transparent;
+   border: none;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   font-weight: bold;
+   font-size: x-large;
+   width: 30px;
+} 
+
+/*Styling for the elements of the date form*/
+#date-input{
+   position: fixed;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,0);
+   width:15%;
+   height:180px;
+   background-color: white;
+   z-index: 10;
+   border-radius: 5px;
+   border: 1px solid black;
+   display: none;
+}
+
+#dateDisplay{
+   display: none;
+}
+
+.date{
+   display: none;
+}
+
+.formButton{
+   border: 1px solid black;
+   border-radius: 5px;
+   width:30%;
+}
+
+#date-input input{
+   width: 30%;
+   border-radius: 5px;
+   border: 2px solid black;
+}
+
+.date-button{
+   position: fixed;
+   height: 100px;
+   width:200px;
+   border-radius: 5px;
+   border: 2px solid black;
+   top: 10px;
+   left: 10px;
+   font-weight: bold;
+}
+
+.wrapper button{
+    height:20px;
+    width:20px;
+    cursor:pointer;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+/*These control the buttons hiding/showing on hover*/
+.hide1{
+   display: none;
+}
+
+.counter:hover > button{
+   display: inline-block;
+}
+
+/*Styling for the right and left arrows in the buttons*/
+.larrow{
+    margin: auto;
+    font-weight: bold;
+    font-size: 10;
+    color: black;
+}
+
+.rarrow{
+    margin: auto;
+    font-weight: bold;
+    font-size: 10;
+    color: black;
+}
+
+
+
+/*Snacks pyramid section*/
+.pyramid_section:nth-child(1) {
+    /*Background Gradient*/
+    background: red;
+
+    /*Clip Path to make the triangle shape*/
+    clip-path: polygon(50% 0%, 41.5% 100%, 58.5% 100%);
+    width: 1000px;
+    height: 150px;
+
+    /*Centers the shape*/
+    margin: auto;
+
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+
+    position: relative;
+    text-align: center;
+ }
+
+ .pyramid_section:nth-child(1) p {
+   margin-left: 450px;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+ }
+
+
+
+ /*Fats pyramid section*/
+ .pyramid_section:nth-child(2) {
+    /*Background Gradient*/
+    background: orange;
+
+    /*Clip Path to make the trapezoid shape*/
+    clip-path: polygon(41% 0%, 59% 0%, 66% 100%, 34% 100%);
+    width: 1000px;
+    height: 120px;
+
+    /*Centers the shape*/
+    margin: auto;
+
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+    position: relative;
+    text-align: center;
+ }
+
+ .pyramid_section:nth-child(2) p {
+    margin-left: 400px;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+ }
+
+
+
+ /*Meats pyramid section*/
+ .pyramid_section:nth-child(3) {
+    /*Background Gradient*/
+    background: yellow;
+
+    /*Clip Path to make the trapezoid shape*/
+    clip-path: polygon(33.5% 0%, 66.5% 0%, 73.5% 100%, 26.5% 100%);
+    width: 1000px;
+    height: 120px;
+
+    /*Centers the shape*/
+    margin: auto;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+    position: relative;
+ }
+
+ .pyramid_section:nth-child(3) p {
+    margin-left: 400px;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+ }
+
+
+
+ /*Healthy Fats pyramid section*/
+ .pyramid_section:nth-child(4) {
+    /*Background Gradient*/
+    background: blue;
+
+    /*Clip Path to make the trapezoid shape*/
+    clip-path: polygon(26.5% 0%, 73.5% 0%, 80.5% 100%, 19.5% 100%);
+    width: 1000px;
+    height: 120px;
+
+    /*Centers the shape*/
+    margin: auto;
+    border-bottom: 1px solid black;
+
+    position: relative;
+ }
+
+ .pyramid_section:nth-child(4) p {
+    margin-left: 400px;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+ }
+
+
+
+ /*Carbs pyramid section*/
+ .pyramid_section:nth-child(5) {
+    /*Background Gradient*/
+    background: brown;
+
+    /*Clip Path to make the trapezoid shape*/
+    clip-path: polygon(19.5% 0, 80.5% 0, 87.6% 100%, 12.4% 100%);
+    width: 1000px;
+    height: 120px;
+
+    /*Centers the shape*/
+    margin: auto;
+    border-bottom: 1px solid black;
+
+    position: relative;
+ }
+
+ .pyramid_section:nth-child(5) p {
+    margin-left: 400px;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+ }
+
+
+
+ /*Vegetables pyramid section*/
+ .pyramid_section:nth-child(6) {
+    /*Background Gradient*/
+    background: green;
+
+    /*Clip Path to make the trapezoid shape*/
+    clip-path: polygon(12.4% 0, 87.6% 0, 94.5% 100%, 5.5% 100%);
+    width: 1000px;
+    height: 120px;
+
+    /*Centers the shape*/
+    margin: auto;
+    border-bottom: 1px solid black;
+
+    position: relative;
+ }
+
+ .pyramid_section:nth-child(6) p {
+    margin-left: 400px;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+ }
